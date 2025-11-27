@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiske-Pacman</title>
+    <link rel="stylesheet" href="css/spil.css" />
+  </head>
+  <body>
+    <audio id="bgMusic" loop>
+      <source src="sound/pacmanlyd.mp3" type="audio/mp3" />
+    </audio>
+    <div id="game">
+      <!-- Score -->
+      <div id="score"><b>Point: 0 </b></div>
+
+      <!-- Pacman/dodger -->
+      <div id="dodger" aria-label="Pacman"></div>
+
+      <!-- Knapper -->
+      <div class="controls">
+        <img
+          src="pacman-img/upbtn.png"
+          id="btnUp"
+          class="ctrl-btn up"
+          alt="op"
+        />
+        <img
+          src="pacman-img/leftbtn.png"
+          id="btnLeft"
+          class="ctrl-btn left"
+          alt="venstre"
+        />
+        <img
+          src="pacman-img/rightbtn.png"
+          id="btnRight"
+          class="ctrl-btn right"
+          alt="højre"
+        />
+        <img
+          src="pacman-img/downbtn.png"
+          id="btnDown"
+          class="ctrl-btn down"
+          alt="ned"
+        />
+      </div>
+
+      <!-- Hjem-knap -->
+      <a href="index.html" class="home-button" aria-label="Til forsiden">
+        <img src="pacman-img/havfrue-knap.png" alt="Havfrue-knap" />
+      </a>
+
+      <!-- Game over-skærm -->
+      <div id="gameOverScreen" class="game-over">
+        <h1>GAME OVER</h1>
+        <p class="dine-point">Dine point: <span id="finalScore">0</span></p>
+        <button id="restartBtn">Spil igen</button>
+      </div>
+    </div>
+
+    <!-- Lyd -->
+    <audio id="movementSound">
+      <source src="audio/movement_sound.mp3" type="audio/mp4" />
+    </audio>
+    <audio id="gameoverSound">
+      <source src="audio/gameover_sound.m4a" type="audio/mp4" />
+    </audio>
+
+    <script src="js/spil.js"></script>
+  </body>
+</html>
