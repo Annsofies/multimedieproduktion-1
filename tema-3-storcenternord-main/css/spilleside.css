@@ -19,11 +19,18 @@
 --------------------------------------------------------- */
 .starfish {
   position: absolute;
-  bottom: 3.3vw; /* stå fast på havbunden */
-  left: 28vw; /* justér, så den ligger lige under havfruens hale */
-  width: 8vw;
+  bottom: 0vw; /* stå fast på havbunden */
+  left: 0vw; /* justér, så den ligger lige under havfruens hale */
+  width: 10vw;
   z-index: 3;
   cursor: pointer;
+}
+/* Taleboble ved søstjernen */
+.spilletekst {
+  position: absolute;
+  bottom: 3vh;
+  left: 8vw;
+  width: 22vw;
 }
 
 /* ---------------------------------------------------------
@@ -42,4 +49,26 @@
   width: 100%;
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(219, 165, 165, 0.25);
+}
+
+/* ---------------------------------------------------------
+   Container til de fem spil-kort
+--------------------------------------------------------- */
+.spil-grid {
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw 5vw; /* afstand mellem kortene */
+}
+
+.games {
+  width: 22vw;
+  max-width: 320px;
+  cursor: pointer;
+  display: block;
 }

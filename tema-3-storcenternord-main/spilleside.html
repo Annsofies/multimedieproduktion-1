@@ -6,21 +6,67 @@
     <title>Spilleside</title>
     <link rel="stylesheet" href="css/spilleside.css" />
   </head>
+
   <body>
-    
     <div id="game">
-      <!-- alt indhold på spillesiden -->
+      <!-- Spil-grid skal blive til en container -->
+      <div class="spil-grid">
+        <!-- FISK MAN -->
+        <a href="spil.html" class="spil">
+          <img src="spilleside-img/fiskman.png" alt="Fisk Man" class="games" />
+        </a>
+
+        <!-- TEGN EN FISK -->
+        <a href="#tegn-fisk" class="spil">
+          <img
+            src="spilleside-img/tegnfisk.png"
+            alt="Tegn en fisk"
+            class="games"
+          />
+        </a>
+
+        <!-- FISK -->
+        <a href="#fisk" class="spil">
+          <img src="spilleside-img/fisk.png" alt="Fisk" class="games" />
+        </a>
+
+        <!-- FLAPPY FISK -->
+        <a href="#flappy-fisk" class="spil">
+          <img
+            src="spilleside-img/flappyfisk.png"
+            alt="Flappy fisk"
+            class="games"
+          />
+        </a>
+
+        <!-- VENDESPIL -->
+        <a href="#vendespil" class="spil">
+          <img
+            src="spilleside-img/vendespil.png"
+            alt="Vendespil"
+            class="games"
+          />
+        </a>
+      </div>
+
+      <!-- Søstjerne + taleboble nederst -->
+      <img src="img/star.png" class="starfish" alt="Søstjerne" />
+      <img
+        src="spilleside-img/spilletekst.png"
+        class="spilletekst"
+        alt="Spilletekst"
+      />
+
+      <!-- Hjem-knap nederst til højre -->
+      <a href="index.html" class="hjemBtn">
+        <img src="img/hjem-knap.png" alt="hjem-knap" />
+      </a>
     </div>
 
     <!-- musik -->
     <audio id="bgMusic" loop>
       <source src="sound/pacmanlyd.mp3" type="audio/mp3" />
     </audio>
-
-    <!-- Spilleside knap -->
-    <a href="index.html" class="hjemBtn">
-      <img src="img/hjem-knap.png" alt="hjem-knap" />
-    </a>
 
     <script src="js/spilleside.js"></script>
   </body>
