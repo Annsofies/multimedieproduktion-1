@@ -63,7 +63,7 @@
 .bg {
   position: absolute;
   inset: 0; /* fyld hele .scene */
-  background-image: url("../pacman-img/baggrund.png");
+  background-image: url("../spil-img/baggrund.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
