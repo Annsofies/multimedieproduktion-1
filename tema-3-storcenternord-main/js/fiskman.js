@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
 });
 
 // Hvor mange pixels fisken flytter sig hver gang man trykker
-const step = 15;
+const step = 25;
 
 // Regner ud hvor langt man må bevæge sig i hver retning
 function maxX() {
