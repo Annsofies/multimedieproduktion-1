@@ -241,6 +241,6 @@ body {
   width: 70vw; 
   max-width: 900px;
   z-index: 200; 
-  pointer-events: none; /* så klik registreres på game */
   display: block;
+  cursor: pointer; 
 }
