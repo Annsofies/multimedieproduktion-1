@@ -21,6 +21,16 @@ let foods = [];
 let enemy = null;
 
 window.addEventListener("load", () => {
+  // overlay af regler så den kommer op først
+  const regler = document.getElementById("regler");
+
+  // regler forsvinder ved klik på skærmen
+  game.addEventListener("click", () => {
+    if (regler) {
+      regler.style.display = "none";
+    }
+  });
+
   //starter dodger i midten af skærmen
   const centerX = (game.clientWidth - dodger.offsetWidth) / 2;
   const centerY = (game.clientHeight - dodger.offsetHeight) / 2;

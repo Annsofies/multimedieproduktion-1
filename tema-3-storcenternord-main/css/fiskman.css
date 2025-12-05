@@ -230,3 +230,17 @@ body {
 .dine-point {
   color: antiquewhite;
 }
+
+
+/* spilleregler */
+#regler {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw; 
+  max-width: 900px;
+  z-index: 200; 
+  pointer-events: none; /* så klik registreres på game */
+  display: block;
+}
