@@ -14,7 +14,7 @@ body {
   margin: 0;
   overflow: hidden;
   text-align: center;
-  background-image: url("../spil-img/baggrund.png");
+  background-image: url("../fiskman-img/baggrund.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +28,7 @@ body {
   position: absolute;
   width: 200px;
   height: 120px;
-  background-image: url("../spil-img/pacman-åben.png");
+  background-image: url("../fiskman-img/pacman-åben.png");
   background-size: contain;
   background-repeat: no-repeat;
   align-self: center;
@@ -40,13 +40,13 @@ body {
 /* tilføjer animation til pacfisk */
 @keyframes nomnom {
   0% {
-    background-image: url("../spil-img/pacman-åben.png");
+    background-image: url("../fiskman-img/pacman-åben.png");
   }
   50% {
-    background-image: url("../spil-img/pacman-luk.png");
+    background-image: url("../fiskman-img/pacman-luk.png");
   }
   100% {
-    background-image: url("../spil-img/pacman-åben.png");
+    background-image: url("../fiskman-img/pacman-åben.png");
   }
 }
 
@@ -171,7 +171,7 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url("../spil-img/pinkmad.png"); /* byt evt. til dit eget billede */
+  background-image: url("../fiskman-img/pinkmad.png"); /* byt evt. til dit eget billede */
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 5;
@@ -182,7 +182,7 @@ body {
   position: absolute;
   width: 200px;
   height: 120px;
-  background-image: url("../spil-img/haj.png"); /* byt evt. til dit eget billede */
+  background-image: url("../fiskman-img/haj.png"); /* byt evt. til dit eget billede */
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 8;
