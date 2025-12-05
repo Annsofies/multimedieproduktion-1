@@ -352,3 +352,19 @@
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); /* blød skygge */
 }
+
+
+/* ---------------------------------------------------------
+   velkomsttekst
+--------------------------------------------------------- */
+#hej {
+  position: absolute;
+  top: 36%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  width: 20vw; /* størrelse */
+  max-width: 900px;
+  z-index: 50;
+  /*display: block;       /* vises fra start */
+  cursor: pointer;      /* viser at man kan trykke */
+}

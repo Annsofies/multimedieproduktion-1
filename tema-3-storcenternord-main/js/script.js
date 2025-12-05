@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const havfrueAaben = document.querySelector(".havfrue-åben");
   const boble = document.querySelector(".taleboble");
   const bobleBillede = document.getElementById("taleboble-billede");
+
+  // Hej tekst overlay
+  const hej = document.getElementById("hej");
+
+  // Skjul hej tekst ved klik hvor som helst
+  document.addEventListener("click", () => {
+    if (hej) {
+      hej.style.display = "none";
+    }
+  });
+
   //baggrundsmusik
   const bgMusic = document.getElementById("bgMusic");
   bgMusic.volume = 0.2;
