@@ -45,6 +45,25 @@
   transition: transform 0.3s ease, filter 0.3s ease;
   z-index: 10;
 }
+
+/* Pulse animation til hjem knappen */
+.hjemBtn {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 .hjemBtn img {
   width: 100%;
   border-radius: 50%;
